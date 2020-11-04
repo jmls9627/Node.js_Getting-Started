@@ -1,7 +1,10 @@
 const http = require('http');
 
 const requestListener=((req, res) => {
-  res.write('Hello World\n');
+  // req, res are streams!
+ // console.dir(req,{depth:0}); 1st level property of the req obj
+ // console.dir(req.url);
+ res.write('Hello World\n');
   res.end();
 });
 
